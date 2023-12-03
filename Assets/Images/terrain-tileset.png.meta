@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 88
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
       name: TileMap1_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 621
-        width: 88
-        height: 88
+        width: 98
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 11}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -154,10 +154,10 @@ TextureImporter:
         x: 98
         y: 621
         width: 88
-        height: 88
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 11}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -179,10 +179,10 @@ TextureImporter:
         x: 186
         y: 621
         width: 88
-        height: 88
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 11}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -207,11 +207,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 621
-        width: 88
-        height: 88
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 11}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -230,13 +230,13 @@ TextureImporter:
       name: TileMap1_4
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 533
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -307,7 +307,7 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 533
-        width: 88
+        width: 97
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -330,13 +330,13 @@ TextureImporter:
       name: TileMap1_8
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 445
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -399,11 +399,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 445
-        width: 88
+        width: 100
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -418,13 +418,13 @@ TextureImporter:
       name: TileMap1_12
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 357
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -495,11 +495,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 357
-        width: 88
+        width: 100
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -518,13 +518,13 @@ TextureImporter:
       name: TileMap1_16
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 269
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -595,11 +595,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 269
-        width: 88
+        width: 100
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -618,13 +618,13 @@ TextureImporter:
       name: TileMap1_20
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 181
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -695,11 +695,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 181
-        width: 88
+        width: 100
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: 44}
@@ -718,13 +718,13 @@ TextureImporter:
       name: TileMap1_24
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 93
-        width: 88
+        width: 98
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -795,11 +795,11 @@ TextureImporter:
         serializedVersion: 2
         x: 274
         y: 93
-        width: 88
+        width: 100
         height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -818,13 +818,13 @@ TextureImporter:
       name: TileMap1_28
       rect:
         serializedVersion: 2
-        x: 10
-        y: 5
-        width: 88
-        height: 88
+        x: 0
+        y: 0
+        width: 98
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 5, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -844,12 +844,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 98
-        y: 5
+        y: 0
         width: 88
-        height: 88
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 5, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -869,12 +869,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 186
-        y: 5
+        y: 0
         width: 88
-        height: 88
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 5, z: 0, w: 0}
       outline: []
       physicsShape:
       - - {x: -44, y: -44}
@@ -894,12 +894,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 274
-        y: 5
-        width: 88
-        height: 88
+        y: 0
+        width: 100
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 5, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
