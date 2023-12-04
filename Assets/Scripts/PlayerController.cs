@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private readonly float movementSpeed = 5.2f;
     private bool isGrounded = false;
     private float currentVelocity;
+
     void Start()
     {
 
