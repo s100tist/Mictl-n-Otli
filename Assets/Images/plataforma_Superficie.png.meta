@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 88
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,9 +106,134 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: plataforma_Superficie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 320
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -160, y: -178.5}
+        - {x: -160, y: 127.5}
+        - {x: -14.3828125, y: 127.5}
+        - {x: 23, y: 119.5}
+        - {x: 55, y: 121.5}
+        - {x: 160, y: 127.5}
+        - {x: 160, y: -178.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076facaa377c46142ab9bfab2d5f0b7c
+      internalID: -161785005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plataforma_Superficie_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 11
+        width: 320
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -160, y: -178.5}
+        - {x: -160, y: 127.5}
+        - {x: 47.359802, y: 127.5}
+        - {x: 82, y: 172.5}
+        - {x: 120.350586, y: 127.5}
+        - {x: 160, y: 127.5}
+        - {x: 160, y: -178.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a384326593a5f5842ad7f0f82f82b6aa
+      internalID: -1017752069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plataforma_Superficie_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 11
+        width: 320
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -160, y: -178.5}
+        - {x: -160, y: 127.5}
+        - {x: -56.49414, y: 127.5}
+        - {x: -17, y: 136.5}
+        - {x: 7.477234, y: 127.50003}
+        - {x: 160, y: 127.5}
+        - {x: 160, y: -178.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83a4f8d751d714458776af5475cea1b
+      internalID: -817475792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plataforma_Superficie_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 11
+        width: 320
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -160, y: -178.5}
+        - {x: -160, y: 123.5}
+        - {x: -69.839966, y: 123.5}
+        - {x: -26, y: 131.5}
+        - {x: 17.734497, y: 123.5}
+        - {x: 160, y: 123.5}
+        - {x: 160, y: -178.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdc3f37fb7cb584897757f8df58d1f1
+      internalID: -1191520405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +244,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      plataforma_Superficie_0: -161785005
+      plataforma_Superficie_1: -1017752069
+      plataforma_Superficie_2: -817475792
+      plataforma_Superficie_3: -1191520405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
