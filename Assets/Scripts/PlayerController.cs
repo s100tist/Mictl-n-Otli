@@ -42,4 +42,13 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Tecpatl"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
