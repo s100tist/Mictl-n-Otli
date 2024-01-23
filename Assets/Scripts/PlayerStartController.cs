@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -86,14 +85,14 @@ public class PlayerStartController : MonoBehaviour
             {
                 leftTime -= Time.deltaTime;
 
-                float cantidadX = iniPos.x + UnityEngine.Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
-                float cantidadY = iniPos.y + UnityEngine.Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
+                float cantidadX = iniPos.x + Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
+                float cantidadY = iniPos.y + Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
                 cantidadX = Mathf.MoveTowards(cantidadX, iniPos.x, cameraShakeTime * Time.deltaTime);
                 cantidadY = Mathf.MoveTowards(cantidadY, iniPos.x, cameraShakeTime * Time.deltaTime);
                 position.position = new Vector3(cantidadX, cantidadY, iniPos.z);
 
                 shakeRotation = Mathf.MoveTowards(shakeRotation, 0F, cameraShakeTime * rotationAmount * Time.deltaTime);
-                position.rotation = Quaternion.Euler(0F, 0F, shakeRotation * UnityEngine.Random.Range(-1F, 1F));
+                position.rotation = Quaternion.Euler(0F, 0F, shakeRotation * Random.Range(-1F, 1F));
             }
             else
             {
@@ -111,14 +110,14 @@ public class PlayerStartController : MonoBehaviour
             {
                 leftTime -= Time.deltaTime;
 
-                float cantidadX = iniPos.x + UnityEngine.Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
-                float cantidadY = iniPos.y + UnityEngine.Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
+                float cantidadX = iniPos.x + Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
+                float cantidadY = iniPos.y + Random.Range(-shakeDisplacement, shakeDisplacement) * shakeForce;
                 cantidadX = Mathf.MoveTowards(cantidadX, iniPos.x, playerShakeTime * Time.deltaTime);
                 cantidadY = Mathf.MoveTowards(cantidadY, iniPos.x, playerShakeTime * Time.deltaTime);
                 transform.position = new Vector3(cantidadX, cantidadY, iniPos.z);
 
                 shakeRotation = Mathf.MoveTowards(shakeRotation, 0F, playerShakeTime * rotationAmount * Time.deltaTime);
-                transform.rotation = Quaternion.Euler(0F, 0F, shakeRotation * UnityEngine.Random.Range(-1F, 1F));
+                transform.rotation = Quaternion.Euler(0F, 0F, shakeRotation * Random.Range(-1F, 1F));
             }
             else
             {

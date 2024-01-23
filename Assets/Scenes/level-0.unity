@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 44197759}
   - component: {fileID: 44197758}
   m_Layer: 0
-  m_Name: Limit Section 1
+  m_Name: Limite Seccion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 62211716}
   - component: {fileID: 62211715}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: Superficie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 147612586}
   - component: {fileID: 147612588}
   m_Layer: 8
-  m_Name: Player
+  m_Name: Jugador
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 683943437}
   - component: {fileID: 683943436}
   m_Layer: 0
-  m_Name: PlayerStart
+  m_Name: JugadorInicio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +945,7 @@ GameObject:
   - component: {fileID: 760611211}
   - component: {fileID: 760611210}
   m_Layer: 0
-  m_Name: Section1
+  m_Name: Seccion1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4810,7 +4810,7 @@ GameObject:
   - component: {fileID: 1267339909}
   - component: {fileID: 1267339908}
   m_Layer: 0
-  m_Name: Cave
+  m_Name: Tumba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4894,7 +4894,7 @@ GameObject:
   - component: {fileID: 1298261225}
   - component: {fileID: 1298261224}
   m_Layer: 0
-  m_Name: Limit Section 0
+  m_Name: Limite Seccion0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5061,7 +5061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607866239}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: Ambiente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5099,7 +5099,7 @@ GameObject:
   - component: {fileID: 1947473864}
   - component: {fileID: 1947473863}
   m_Layer: 0
-  m_Name: Start
+  m_Name: Inicio
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
