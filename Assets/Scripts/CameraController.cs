@@ -19,7 +19,11 @@ public class CameraController : MonoBehaviour
     {
 
         // Move camera if player passes to second screen
-        if (animator.GetBool(screens[1].name) && player.position.y < -7.5f && player.position.x > -14f && player.position.x < 10f)
+        if (animator.GetBool(screens[0].name) && player.position.x > 5.7f && player.position.x < 34.15f && player.position.y > -12.8f)
+        {
+            GoToScreen(screens[1].name);
+        }
+        else if (animator.GetBool(screens[1].name) && player.position.y < -7.5f && player.position.x > -14f && player.position.x < 10f)
         {
             GoToScreen(screens[2].name);
         }
