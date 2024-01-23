@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStartController : MonoBehaviour
@@ -17,6 +16,10 @@ public class PlayerStartController : MonoBehaviour
     private Vector3 cameraIniPos, playerIniPos;
     private bool cameraShake, playerShake;
 
+    private int chainCounter = 20;
+    private bool playing = false;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +29,22 @@ public class PlayerStartController : MonoBehaviour
 
     void Update()
     {
+        if (playing) return;
+
         // Add shake when arrow keys are pressed
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            StartShake(durationShake, force);
+            if (chainCounter > 0)
+            {
+                chainCounter--;
+                StartShake(durationShake, force);
+            }
+            else
+            {
+                playing = true;
+                player.SetActive(playing);
+                Destroy(gameObject);
+            }
         }
     }
 
