@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Tecpatl
+  - Limite Muerte
+  - Mensaje Final
   layers:
   - Default
   - TransparentFX
@@ -14,12 +16,12 @@ TagManager:
   - Water
   - UI
   - Fondo
+  - Superficie
+  - 
+  - 
   - Ground
+  - 
   - Player
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -45,6 +47,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 445535877
+    locked: 0
+  - name: Superficie
+    uniqueID: 418214453
     locked: 0
   - name: Ground
     uniqueID: 310869413

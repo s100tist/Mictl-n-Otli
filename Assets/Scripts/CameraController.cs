@@ -17,25 +17,62 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // Move camera if player passes to second screen
-        if (animator.GetBool(screens[0].name) && player.position.x > 5.7f && player.position.x < 34.15f && player.position.y > -12.8f)
+        if (player.position.x > 5.7f && player.position.x < 34.15f && player.position.y > -10.9f)
         {
             GoToScreen(screens[1].name);
         }
-        else if (animator.GetBool(screens[1].name) && player.position.y < -7.5f && player.position.x > -14f && player.position.x < 10f)
+        else if (player.position.x > 5.7f && player.position.x < 34.15f && player.position.y < -10.9f && player.position.y > -26.9f)
         {
             GoToScreen(screens[2].name);
         }
-        else if (animator.GetBool(screens[2].name) && player.position.x > 17f)
+        else if (player.position.x > 34.15f && player.position.y > -26.9f)
         {
             GoToScreen(screens[3].name);
         }
-        else if (animator.GetBool(screens[3].name) && player.position.x < 17f)
+        else if (player.position.x > 29.3f && player.position.y < -26.9f)
         {
-            GoToScreen(screens[2].name);
+            GoToScreen(screens[4].name);
+        }
+        else if (player.position.x > 0.85f && player.position.x < 29.3f && player.position.y < -26.9f)
+        {
+            animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+            GoToScreen(screens[5].name);
+        }
+        else if (player.position.x > -46.01f && player.position.x < 0.85f && player.position.y < -23f)
+        {
+            GoToScreen(screens[6].name);
+            animator.cullingMode = AnimatorCullingMode.CullCompletely;
+            // set the animator in screen6 clip
+            animator.Play("Screen6");
+            transform.position = new Vector3(
+                            Mathf.Clamp(player.position.x, -31.8f, -13.5f),
+                            Mathf.Clamp(player.position.y, -35.9f, -31f),
+                            -10f
+                        );
+        }
+        else if (player.position.x < -22.8f && player.position.y < -10f && player.position.y > -23f)
+        {
+            animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+            GoToScreen(screens[7].name);
+        }
+        else if (player.position.x > -22.8f && player.position.x < 5.7f && player.position.y > -21.9f && player.position.y < 6f)
+        {
+            animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+            GoToScreen(screens[8].name);
         }
     }
+
+    /* void LateUpdate()
+    {
+        if (player.position.x > -46.01f && player.position.x < 0.85f && player.position.y < -23f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(player.position.x, -31.8f, -13.5f),
+                Mathf.Clamp(player.position.y, -35.9f, -31f),
+                -10f
+            );
+        }
+    } */
 
     private void GoToScreen(string transitionName)
     {

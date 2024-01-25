@@ -10,10 +10,11 @@ public class PlayerController : MonoBehaviour
     private readonly float movementSpeed = 5.2f;
     private bool isGrounded = false;
     private float currentVelocity;
+    public GameObject mensajeFinal;
 
     void Start()
     {
-
+        transform.position = new Vector3(-1.1f, -1f, 0);
     }
 
     // Update is called once per frame
@@ -49,6 +50,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Tecpatl"))
         {
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Limite Muerte"))
+        {
+            //Destroy(gameObject);
+            //GameObject mensajeFinal = GameObject.FindGameObjectWithTag("Mensaje Final");
+            mensajeFinal.SetActive(true);
         }
     }
 }
