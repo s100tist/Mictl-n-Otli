@@ -44,6 +44,8 @@ public class CameraController : MonoBehaviour
             animator.cullingMode = AnimatorCullingMode.CullCompletely;
             // set the animator in screen6 clip
             animator.Play("Screen6");
+            // change camera orthographic size
+            Camera.main.orthographicSize = 8f;
             transform.position = new Vector3(
                             Mathf.Clamp(player.position.x, -31.8f, -13.5f),
                             Mathf.Clamp(player.position.y, -35.9f, -31f),
@@ -62,17 +64,6 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    /* void LateUpdate()
-    {
-        if (player.position.x > -46.01f && player.position.x < 0.85f && player.position.y < -23f)
-        {
-            transform.position = new Vector3(
-                Mathf.Clamp(player.position.x, -31.8f, -13.5f),
-                Mathf.Clamp(player.position.y, -35.9f, -31f),
-                -10f
-            );
-        }
-    } */
 
     private void GoToScreen(string transitionName)
     {
