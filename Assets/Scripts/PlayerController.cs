@@ -1,51 +1,73 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private readonly float jumpForce = 6;
-    private readonly float movementSpeed = 5.2f;
-    private bool isGrounded = false;
-    private float currentVelocity;
+    // Constantes
+    private readonly float FUERZA_SALTO = 6;
+    private readonly float VELOCIDAD_MOVIMIENTO = 5.2f;
+
+    // Banderas
+    private bool enSuelo = false;
+    private bool morirá = false;
+
+    // Variables
+    private float velocidadActual;
     public GameObject mensajeFinal;
+    private Rigidbody2D rb;
 
     void Start()
     {
+        // Mueve al jugador a la posición inicial
         transform.position = new Vector3(-1.1f, -1f, 0);
+
+        // Obtiene el componente Rigidbody2D
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Move player left and right
+        // Mueve al jugador con las teclas de Flecha Izquierda y Derecha
         float horizontalInput = Input.GetAxis("Horizontal");
-        float targetVelocity = horizontalInput * movementSpeed;
-        float smoothVelocity = Mathf.SmoothDamp(GetComponent<Rigidbody2D>().velocity.x, targetVelocity, ref currentVelocity, 0.05f);
+        float targetVelocity = horizontalInput * VELOCIDAD_MOVIMIENTO;
+        float smoothVelocity = Mathf.SmoothDamp(GetComponent<Rigidbody2D>().velocity.x, targetVelocity, ref velocidadActual, 0.05f);
         GetComponent<Rigidbody2D>().velocity = new Vector2(smoothVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
-        // Jump player with up arrow
-        //bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-        if (isGrounded && Input.GetKeyDown(KeyCode.UpArrow))
+        // Salta con la telca de Fleca Arriba
+        if (enSuelo && Input.GetKeyDown(KeyCode.UpArrow))
         {
-            isGrounded = false;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpForce);
+            enSuelo = false;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, FUERZA_SALTO);
         }
+
+        // Verifica si el jugador ya no está en el suelo porque está cayendo
+        if (rb.velocity.y < -4f)
+            enSuelo = false;
+
+
+        // Verifica si el jugador perderá por caida
+        if (!enSuelo && rb.velocity.y < -17f)
+            morirá = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        // check if player is on ground layer
-        if (collision.gameObject.CompareTag("Ground"))
+        // Verifica si el jugador toca el suelo
+        if (collision.gameObject.CompareTag("Suelo"))
         {
-            isGrounded = true;
+            enSuelo = true;
+
+            if (morirá)
+            {
+                //Destroy(gameObject);
+                mensajeFinal.SetActive(true);
+            }
         }
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Tecpatl"))
         {
@@ -54,7 +76,6 @@ public class PlayerController : MonoBehaviour
         else if (collision.gameObject.CompareTag("Limite Muerte"))
         {
             //Destroy(gameObject);
-            //GameObject mensajeFinal = GameObject.FindGameObjectWithTag("Mensaje Final");
             mensajeFinal.SetActive(true);
         }
     }

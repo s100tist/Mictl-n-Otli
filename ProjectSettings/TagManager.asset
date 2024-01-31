@@ -4,10 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
   - Tecpatl
   - Limite Muerte
-  - Mensaje Final
+  - Suelo
   layers:
   - Default
   - TransparentFX

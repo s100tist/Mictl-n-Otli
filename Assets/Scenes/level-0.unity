@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 27794008}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5842,8 +5842,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03485, y: 0.2641499, z: 0}
-    m_Extent: {x: 2.89815, y: 2.82865, z: 0}
+    m_Center: {x: 0.036249995, y: 0.26524997, z: 0}
+    m_Extent: {x: 2.89645, y: 2.82465, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5934,8 +5934,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0016000271, y: 0.002049923, z: 0}
-    m_Extent: {x: 3.6029, y: 3.60145, z: 0}
+    m_Center: {x: -0.0009999275, y: 0.0013999939, z: 0}
+    m_Extent: {x: 3.5964, y: 3.5938, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6049,8 +6049,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 445535877
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.8699999, y: 2.7527997, z: 0}
@@ -6820,7 +6820,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527228669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6994,7 +6994,7 @@ GameObject:
   - component: {fileID: 589952162}
   - component: {fileID: 589952161}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7083,7 +7083,7 @@ GameObject:
   - component: {fileID: 605877023}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11820,8 +11820,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 445535877
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.8699999, y: 2.7527997, z: 0}
@@ -12797,7 +12797,7 @@ GameObject:
   - component: {fileID: 760611210}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17205,8 +17205,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 445535877
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.8699999, y: 2.7527997, z: 0}
@@ -17453,8 +17453,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 445535877
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.8699999, y: 2.7527997, z: 0}
@@ -17760,8 +17760,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.018999934, y: 0.41859996, z: 0}
-    m_Extent: {x: 2.7055001, y: 2.9699001, z: 0}
+    m_Center: {x: -0.013749957, y: 0.40955007, z: 0}
+    m_Extent: {x: 2.69705, y: 2.97815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -18458,8 +18458,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.014350057, y: 0.17495, z: 0}
-    m_Extent: {x: 2.6231499, y: 2.58665, z: 0}
+    m_Center: {x: 0.011000037, y: 0.17705, z: 0}
+    m_Extent: {x: 2.624, y: 2.59275, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -18506,7 +18506,7 @@ GameObject:
   - component: {fileID: 1008035272}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22433,7 +22433,7 @@ GameObject:
   - component: {fileID: 1009673456}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28840,7 +28840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb45d314b977fc4fb864b8ffb2b8ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 147612585}
+  jugador: {fileID: 147612585}
 --- !u!114 &1044640353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29035,8 +29035,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.006250024, y: 0.0055000186, z: 0}
-    m_Extent: {x: 1.84645, y: 1.8517001, z: 0}
+    m_Center: {x: -0.00029999018, y: -0.0009999871, z: 0}
+    m_Extent: {x: 1.8462, y: 1.8468001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -30175,7 +30175,7 @@ GameObject:
   - component: {fileID: 1362813189}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33082,7 +33082,7 @@ GameObject:
   - component: {fileID: 1375248829}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37649,7 +37649,7 @@ GameObject:
   - component: {fileID: 1661194341}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42233,8 +42233,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.04669988, y: -0.14760017, z: 0}
-    m_Extent: {x: 4.0367, y: 4.9308, z: 0}
+    m_Center: {x: -0.041750073, y: -0.14999986, z: 0}
+    m_Extent: {x: 4.0314503, y: 4.9272003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -42253,74 +42253,6 @@ MonoBehaviour:
   - {x: -0.10059357, y: 2.4302902, z: 0}
   - {x: -1.513649, y: 1.212492, z: 0}
   - {x: -2.083809, y: -1.1174717, z: 0}
---- !u!1 &1679445942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1679445945}
-  - component: {fileID: 1679445944}
-  - component: {fileID: 1679445943}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1679445943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679445942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1679445944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679445942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1679445945
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679445942}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743844054
 GameObject:
   m_ObjectHideFlags: 0
@@ -43339,8 +43271,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.3771, y: -0.4432, z: 0}
-    m_Extent: {x: 3.6397, y: 3.4288, z: 0}
+    m_Center: {x: 0.3788501, y: -0.4405501, z: 0}
+    m_Extent: {x: 3.64475, y: 3.43275, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -43373,7 +43305,7 @@ GameObject:
   - component: {fileID: 1947473863}
   m_Layer: 0
   m_Name: Inicio
-  m_TagString: Ground
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44593,8 +44525,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.046599984, y: 0.352, z: 0}
-    m_Extent: {x: 3.5238, y: 2.927, z: 0}
+    m_Center: {x: 0.033549905, y: 0.35605, z: 0}
+    m_Extent: {x: 3.51975, y: 2.92745, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -44913,8 +44845,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.13875008, y: 0.29565, z: 0}
-    m_Extent: {x: 2.72455, y: 2.80435, z: 0}
+    m_Center: {x: 0.14499998, y: 0.29625, z: 0}
+    m_Extent: {x: 2.7201, y: 2.80345, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -45680,6 +45612,5 @@ SceneRoots:
   - {fileID: 829406988}
   - {fileID: 695981068}
   - {fileID: 736177857}
-  - {fileID: 1679445945}
   - {fileID: 132509358}
   - {fileID: 589952162}
