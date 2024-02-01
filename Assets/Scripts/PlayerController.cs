@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private float velocidadActual;
     public GameObject mensajeFinal;
     private Rigidbody2D rb;
+    private GameManager gameManager;
 
     void Start()
     {
@@ -24,10 +25,14 @@ public class PlayerController : MonoBehaviour
 
         // Obtiene el componente Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
+
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     void Update()
     {
+        if (gameManager.IsGameOver()) return;
+
         // Mueve al jugador con las teclas de Flecha Izquierda y Derecha
         float horizontalInput = Input.GetAxis("Horizontal");
         float targetVelocity = horizontalInput * VELOCIDAD_MOVIMIENTO;
@@ -60,8 +65,8 @@ public class PlayerController : MonoBehaviour
 
             if (morirá)
             {
-                //Destroy(gameObject);
                 mensajeFinal.SetActive(true);
+                gameManager.GameOver();
             }
         }
     }
@@ -75,8 +80,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Limite Muerte"))
         {
-            //Destroy(gameObject);
             mensajeFinal.SetActive(true);
+            gameManager.GameOver();
         }
     }
 }
