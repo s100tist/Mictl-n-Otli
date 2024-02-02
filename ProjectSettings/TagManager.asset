@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - Tecpatl
+  - Limite Muerte
+  - Suelo
   layers:
   - Default
   - TransparentFX
@@ -12,13 +14,13 @@ TagManager:
   - 
   - Water
   - UI
+  - Fondo
+  - Superficie
   - 
   - 
+  - Ground
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 445535877
+    locked: 0
+  - name: Superficie
+    uniqueID: 418214453
+    locked: 0
+  - name: Ground
+    uniqueID: 310869413
+    locked: 0
+  - name: Player
+    uniqueID: 3762843571
     locked: 0
