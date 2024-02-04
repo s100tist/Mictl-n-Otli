@@ -18,6 +18,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject menu;
     [SerializeField] private float delayMenu = 3f;
 
+    [Header("Créditos")]
+    [SerializeField] private GameObject creditos;
+    [SerializeField] private float duracionAnimacionCreditos = 1f;
+    [SerializeField] private AudioClip sonidoCreditos;
+
     private readonly float DURACION_ANIMACION = 2f;
 
     void Start()
@@ -67,4 +72,20 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
+
+    public void Creditos()
+    {
+        // Muestra los créditos
+        SonidoControlador.instancia.ReproducirSonido(sonidoCreditos);
+        LeanTween.alphaCanvas(creditos.GetComponent<CanvasGroup>(), 1, duracionAnimacionCreditos).setEase(LeanTweenType.easeInExpo);
+        creditos.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void CerrarCreditos()
+    {
+        // Oculta los créditos
+        SonidoControlador.instancia.ReproducirSonido(sonidoCreditos);
+        LeanTween.alphaCanvas(creditos.GetComponent<CanvasGroup>(), 0, duracionAnimacionCreditos).setEase(LeanTweenType.easeInExpo);
+        creditos.GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
 }
