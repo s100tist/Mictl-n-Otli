@@ -23,6 +23,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private float duracionAnimacionCreditos = 1f;
     [SerializeField] private AudioClip sonidoCreditos;
 
+    [Header("Códice")]
+    [SerializeField] private GameObject codice;
+    [SerializeField] private float duracionAnimacionCodice = 1f;
+    [SerializeField] private AudioClip sonidoCodice;
+
     private readonly float DURACION_ANIMACION = 2f;
 
     void Start()
@@ -87,5 +92,21 @@ public class MenuManager : MonoBehaviour
         SonidoControlador.instancia.ReproducirSonido(sonidoCreditos);
         LeanTween.alphaCanvas(creditos.GetComponent<CanvasGroup>(), 0, duracionAnimacionCreditos).setEase(LeanTweenType.easeInExpo);
         creditos.GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
+
+    public void Codice()
+    {
+        // Muestra el códice
+        SonidoControlador.instancia.ReproducirSonido(sonidoCodice);
+        LeanTween.alphaCanvas(codice.GetComponent<CanvasGroup>(), 1, duracionAnimacionCodice).setEase(LeanTweenType.easeInExpo);
+        codice.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void CerrarCodice()
+    {
+        // Oculta el códice
+        SonidoControlador.instancia.ReproducirSonido(sonidoCodice);
+        LeanTween.alphaCanvas(codice.GetComponent<CanvasGroup>(), 0, duracionAnimacionCodice).setEase(LeanTweenType.easeInExpo);
+        codice.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
