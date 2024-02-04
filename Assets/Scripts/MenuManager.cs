@@ -28,8 +28,10 @@ public class MenuManager : MonoBehaviour
 
     void EntradaTitulo()
     {
-        // Realiza el fade-in del título
         tituloTexto = titulo.GetComponent<TextMeshProUGUI>();
+        // Oculta el título
+        tituloTexto.color = new Color(tituloTexto.color.r, tituloTexto.color.g, tituloTexto.color.b, 0);
+        // Realiza el fade-in del título
         LeanTween.value(titulo, 0, 1, DURACION_ANIMACION).setDelay(delayTitulo).setOnUpdate((float val) =>
         {
             Color color = tituloTexto.color;
@@ -44,6 +46,8 @@ public class MenuManager : MonoBehaviour
 
     void EntradaMenu()
     {
+        // Oculta el menú
+        menu.GetComponent<CanvasGroup>().alpha = 0;
         // Realize el fade-in del menú
         LeanTween.alphaCanvas(menu.GetComponent<CanvasGroup>(), 1, DURACION_ANIMACION).setDelay(delayMenu).setEase(LeanTweenType.easeInExpo).setOnComplete(() =>
         {
