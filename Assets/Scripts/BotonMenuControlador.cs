@@ -8,6 +8,8 @@ public class BotonMenuControlador : MonoBehaviour, IPointerEnterHandler, IPointe
     [SerializeField] private float escalaHover = 1.04f;
     [SerializeField] private float escalaClick = 0.96f;
     [SerializeField] private float duracionAnimacion = 0.1f;
+    [SerializeField] private AudioClip sonidoHover;
+    [SerializeField] private AudioClip sonidoClick;
     private Vector3 escalaOriginal;
     private bool cursorEncima = false;
 
@@ -22,6 +24,7 @@ public class BotonMenuControlador : MonoBehaviour, IPointerEnterHandler, IPointe
     {
         cursorEncima = true;
         LeanTween.scale(gameObject, escalaOriginal * escalaHover, duracionAnimacion);
+        SonidoControlador.instancia.ReproducirSonido(sonidoHover);
     }
 
     // Cuando el cursor sale del área del botón
@@ -35,6 +38,7 @@ public class BotonMenuControlador : MonoBehaviour, IPointerEnterHandler, IPointe
     public void OnPointerDown(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, escalaOriginal * escalaClick, duracionAnimacion);
+        SonidoControlador.instancia.ReproducirSonido(sonidoClick);
     }
 
     // Cuando el cursor deja de hacer clic en el botón
