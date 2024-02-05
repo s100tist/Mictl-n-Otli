@@ -29,11 +29,14 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private AudioClip sonidoCodice;
 
     private readonly float DURACION_ANIMACION = 2f;
+    private AudioSource audioSource;
 
     void Start()
     {
         EntradaTitulo();
         EntradaMenu();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void EntradaTitulo()
@@ -68,7 +71,37 @@ public class MenuManager : MonoBehaviour
 
     public void IniciarJuego()
     {
-        SceneManager.LoadScene(1);
+        // Fade-out del fondo del canvas
+        LeanTween.alpha(gameObject.GetComponent<RectTransform>(), 0, DURACION_ANIMACION).setOnComplete(() =>
+        {
+            // Carga el nivel 1
+            SceneManager.LoadScene(1);
+        });
+
+        // Fade-out del fondo verde
+        LeanTween.value(fondo, 0.5f, 0, DURACION_ANIMACION).setOnUpdate((float val) =>
+        {
+            Color color = fondoImagen.color;
+            color.a = val;
+            fondoImagen.color = color;
+        });
+
+        // Fade-out del título
+        LeanTween.value(titulo, 1, 0, DURACION_ANIMACION).setOnUpdate((float val) =>
+        {
+            Color color = tituloTexto.color;
+            color.a = val;
+            tituloTexto.color = color;
+        });
+
+        // Fade-out del menú
+        LeanTween.alphaCanvas(menu.GetComponent<CanvasGroup>(), 0, DURACION_ANIMACION);
+
+        // Reducción del volumen de la música
+        LeanTween.value(gameObject, 1, 0, DURACION_ANIMACION).setOnUpdate((float val) =>
+        {
+            audioSource.volume = val;
+        });
     }
 
     public void SalirJuego()

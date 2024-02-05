@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mictl n Otli
+  m_text: Mictlan Otli
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 700fcb9b9caa5c7459a7ba48b55c6d58, type: 2}
   m_sharedMaterial: {fileID: -3617841350189949003, guid: 700fcb9b9caa5c7459a7ba48b55c6d58, type: 2}
