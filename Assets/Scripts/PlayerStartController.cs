@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerStartController : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform;
+    [SerializeField] private AudioClip sonidoTelaMovimiento;
+    [SerializeField] private AudioClip sonidoTelaEscape;
+    [SerializeField] private AudioClip sonidoTierraEscape;
 
     private readonly float durationShake = 0.08f;
     private readonly float force = 0.2f;
@@ -36,10 +39,13 @@ public class PlayerStartController : MonoBehaviour
             if (chainCounter > 0)
             {
                 chainCounter--;
+                SonidoControlador.instancia.ReproducirSonido(sonidoTelaMovimiento);
                 StartShake(durationShake, force);
             }
             else
             {
+                SonidoControlador.instancia.ReproducirSonido(sonidoTelaEscape);
+                SonidoControlador.instancia.ReproducirSonido(sonidoTierraEscape);
                 playing = true;
                 player.SetActive(playing);
                 Destroy(gameObject);

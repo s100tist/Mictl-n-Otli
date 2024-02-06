@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private AudioClip sonidoPasos;
+    [SerializeField] private AudioClip sonidoSalto;
     // Constantes
     private readonly float FUERZA_SALTO = 6;
     private readonly float VELOCIDAD_MOVIMIENTO = 5.2f;
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public GameObject mensajeFinal;
     private Rigidbody2D rb;
     private GameManager gameManager;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -27,6 +30,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -38,17 +43,34 @@ public class PlayerController : MonoBehaviour
         float targetVelocity = horizontalInput * VELOCIDAD_MOVIMIENTO;
         float smoothVelocity = Mathf.SmoothDamp(GetComponent<Rigidbody2D>().velocity.x, targetVelocity, ref velocidadActual, 0.05f);
         GetComponent<Rigidbody2D>().velocity = new Vector2(smoothVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        // Reproduce el sonido de pasos
+        if (horizontalInput != 0 && enSuelo)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = sonidoPasos;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
+        else if (enSuelo)
+            audioSource.Stop();
 
-        // Salta con la telca de Fleca Arriba
+        // Salta con la tecla de Flecha Arriba
         if (enSuelo && Input.GetKeyDown(KeyCode.UpArrow))
         {
             enSuelo = false;
+            audioSource.clip = sonidoSalto;
+            audioSource.loop = false;
+            audioSource.Play();
             GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, FUERZA_SALTO);
         }
 
         // Verifica si el jugador ya no está en el suelo porque está cayendo
-        if (rb.velocity.y < -4f)
+        if (rb.velocity.y < -4f) {
             enSuelo = false;
+            audioSource.Stop();
+        }
 
 
         // Verifica si el jugador perderá por caida
